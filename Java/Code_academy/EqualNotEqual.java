@@ -7,5 +7,8 @@ public class EqualNotEqual {
 
     boolean sameNumberOfSongs = songsA == songsB;
     System.out.println (sameNumberOfSongs);
+
+    boolean differentLength = albumLengthA != albumLengthB;
+    System.out.println (differentLength);
   }
 }
