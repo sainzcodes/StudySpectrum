@@ -104,23 +104,8 @@ print(list_numbers)'''
 text_cap = text.upper()
 print(text_cap)'''
 
-'''All Roads Lead to Rome
-
-You are given a list with various flight connections in Europe. Each connection is represented as a tuple with the following elements:
-
-(city_from, city_to, time)
-
-For example, the following tuple represents a flight from Amsterdam to Dublin which takes 100 minutes:
-
-('Amsterdam', 'Dublin', 100)
-
-Your task is to go through all the routes in a loop and check how many of them lead to Rome (i.e. how many of them have city_to equal to 'Rome'). Among the routes to Rome, you should also calculate the average flight time. Print the following the output:
-
-{} connections lead to Rome with an average flight time of {} minutes
-
-Replace {} with the number of connections and the average flight time. '''
-
-connections = [
+# More practice
+'''connections = [
     ('Amsterdam', 'Dublin', 100),
     ('Amsterdam', 'Rome', 140),
     ('Rome', 'Warsaw', 130),
@@ -142,14 +127,45 @@ for flight in connections:
 		counter += 1
 		sum += flight[2]
 
-print(counter, 'connections lead to Rome with an average flight time of ', sum/counter, 'minutes')
+print(counter, 'connections lead to Rome with an average flight time of', sum/counter, 'minutes')'''
 
+'''# Dictionaries
+grades = {}
+grades['Santiago'] = 'B-'
+grades['Annie'] = 'A'
+grades['Annie'] = 'A+'
+print(grades)
+if 'Santiago' in grades:
+	print('Santiago got a ', grades['Santiago'], 'grade letter')
+del grades['Santiago']
+grades['Santiago'] = 'B+'
 
+# Printing the elements
+for names in grades:
+	print(names)
 
+# Printing the keys
+for names in grades.keys():
+	print(names)
 
+# Printing the values
+for names in grades.values():
+	print(names)
 
+# Printing the items
+for names in grades.items():
+	print(names)
+'''
+# Example of definition
+'''def greet():
+	print('Hello, my dear!')'''
 
+# Another example
+def get_average(input_numbers):
+	sum = 0.0
+	for number in input_numbers:
+		sum += number
+	average = sum / len(input_numbers)
+	print(average)
 
-
-
-
+get_average([5.0,3.0,5.67,5.3,6.3,2.4])

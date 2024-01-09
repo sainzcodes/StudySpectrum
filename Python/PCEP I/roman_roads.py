@@ -15,7 +15,8 @@ Your task is to go through all the routes in a loop and check how many of them l
 Replace {} with the number of connections and the average flight time. '''
 
 # List of the given connections
-'''connections = [
+'''
+connections = [
     ('Amsterdam', 'Dublin', 100),
     ('Amsterdam', 'Rome', 140),
     ('Rome', 'Warsaw', 130),
@@ -33,12 +34,12 @@ connections_to_rome = 0
 
 # Iteration trough the 'connection' lists using a loop'
 for connection in connections:
-	city_from, city_to, time = connection
+    city_from, city_to, time = connection
 
-	#Check if the destination is Rome
-	if city_to == 'Rome':
-		total_flight_time += time 
-		connections_to_rome += 1
+    #Check if the destination is Rome
+    if city_to == 'Rome':
+        total_flight_time += time 
+        connections_to_rome += 1
 
 # Check if there are connections to Rome
 if connections_to_rome > 0:
