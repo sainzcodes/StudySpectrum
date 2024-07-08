@@ -1,4 +1,4 @@
-'''
+
 --- The Math Module ---
 # Syntax: import math, 'invoke-module' (ceil(x), floor(x), trunc(x), sqrt(x), factorial(x))
 import math
@@ -61,7 +61,10 @@ print(platform.python_implementation()) #Output: CPython
 
 # python_version_tupple returns the the major part of the version, minor part of the version and the patch.
 print(platform.python_version_tuple()) #Output: ('3', '11', '7')
-'''
+
+# The version function returns the system's release version as a single string
+import platform
+print(platform.version())
 
 
 
