@@ -1,4 +1,4 @@
-
+'''
 --- The Math Module ---
 # Syntax: import math, 'invoke-module' (ceil(x), floor(x), trunc(x), sqrt(x), factorial(x))
 import math
@@ -65,6 +65,7 @@ print(platform.python_version_tuple()) #Output: ('3', '11', '7')
 # The version function returns the system's release version as a single string
 import platform
 print(platform.version())
+'''
 
-
-import first_module.py
+# For this section reffer to the files own_module.py and main.py to see their interactions
+# Files that have __ in ther names should not be modified
